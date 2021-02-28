@@ -16,6 +16,7 @@ namespace joc_de_preguntes
 
         static void MostrarMenu()
         {
+            // MENU PRINCIPAL
             //color de fons
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.Clear();
@@ -41,6 +42,7 @@ namespace joc_de_preguntes
 
             do
             {
+                //SELECCIONAR OPCIÓ DES DEL MENÚ
                 MostrarMenu();
 
                 c = Console.ReadKey().KeyChar;
@@ -88,12 +90,15 @@ namespace joc_de_preguntes
             pregunta1H();
             pregunta2H();
             pregunta3H();
+            pregunta4H();
+            pregunta5H();
 
             TempsEspera(3000);
         }
 
         static void pregunta1H()
         {
+            //PRIMERA PREGUNTA D'HISTORIA
             Console.WriteLine("Qui va ser el primer president de la democràcia espanyola després del franquisme?");
             Console.WriteLine("1- Adolfo Suárez.");
             Console.WriteLine("2- Pedro Sánchez");
@@ -130,6 +135,7 @@ namespace joc_de_preguntes
 
         static void pregunta2H()
         {
+            //SEGONA PREGUNTA D'HISTORIA
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Qui va ser el primer president dels Estats Units?");
             Console.WriteLine("1- Donald Trump");
@@ -166,6 +172,7 @@ namespace joc_de_preguntes
 
         static void pregunta3H()
         {
+            //TERCERA PREGUNTA D'HISTORIA'
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Com es deien els dos exploradors que van donar la primera volta a el món?");
             Console.WriteLine("1- Magallanes-Elcano");
@@ -202,6 +209,7 @@ namespace joc_de_preguntes
 
         static void pregunta4H()
         {
+            //QUARTA PREGUNTA D'HISTORIA
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Què illa va servir de presó per Napoleó després de la seva derrota a la batalla de Waterloo?");
             Console.WriteLine("1- Illes de Hawaii");
@@ -238,6 +246,7 @@ namespace joc_de_preguntes
 
         static void pregunta5H()
         {
+            //CINQUENA PREGUNTA D'HISTORIA
             Console.WriteLine("presiona qualsevol tecla per a tornar al MENU PRINCIPAL ");
             Console.WriteLine("Per quina religió és especialment important el rei Haile Selassie I?");
             Console.WriteLine("1- cristianisme");

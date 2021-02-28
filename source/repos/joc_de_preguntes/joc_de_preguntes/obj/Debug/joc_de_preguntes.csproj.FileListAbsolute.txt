@@ -1,0 +1,7 @@
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\bin\Debug\joc_de_preguntes.exe.config
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\bin\Debug\joc_de_preguntes.exe
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\bin\Debug\joc_de_preguntes.pdb
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\obj\Debug\joc_de_preguntes.csprojAssemblyReference.cache
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\obj\Debug\joc_de_preguntes.csproj.CoreCompileInputs.cache
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\obj\Debug\joc_de_preguntes.exe
+C:\Users\aleix\source\repos\joc_de_preguntes\joc_de_preguntes\obj\Debug\joc_de_preguntes.pdb

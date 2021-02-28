@@ -504,13 +504,129 @@ namespace joc_de_preguntes
             Console.WriteLine("\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::");
             Console.WriteLine("");
 
+            pregunta1E();
+            pregunta1E();
+            pregunta3E();
+
             TempsEspera(2000);
 
         }
 
-      
+        static void pregunta1E()
+        {
+            //PRIMERA PREGUNTA D'ESPORTS
+            Console.WriteLine("Qui va ser Cobi?");
+            Console.WriteLine("1- Va ser el creador de Facebook");
+            Console.WriteLine("2- Cobi va ser la mascota de les Jocs Olímpics de 1992");
+            Console.WriteLine("3- Millor jugador de tennis");
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
 
- 
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        correcte();
+                        break;
+                    case '3':
+                        incorrecte();
+                        break;
+
+                    default:
+                        pregunta2E();
+                        break;
+
+                }
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta2E()
+        {
+            //SEGONA PREGUNTA D'ART
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Què esport jugat amb un bat i una pilota és el més popular a l'Índia?");
+            Console.WriteLine("1- Baesball");
+            Console.WriteLine("2- Críquet");
+            Console.WriteLine("3- Tennis");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        correcte();
+                        break;
+                    case '3':
+                        incorrecte();
+                        break;
+
+                    default:
+                        pregunta3AL();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta3E()
+        {
+            //TERCERA PREGUNTA D'ART
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Quin jugador de futbol va donar peu a un moviment conegut com la gravesinha?");
+            Console.WriteLine("1- Thomas the train");
+            Console.WriteLine("2- Roberto Rodríguez");
+            Console.WriteLine("3- Thomas Gravesen");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        correcte();
+                        break;
+
+                    default:
+                        pregunta4AL();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+
+
+
+
         static void TempsEspera(int Segons)
         {
             // temps espera de x segons

@@ -79,6 +79,7 @@ namespace joc_de_preguntes
         }
         static void historia()
         {
+            //CAP DE PREGUNTES D'HISTÒRIA
             Console.BackgroundColor = ConsoleColor.Green;
             Console.Clear();
             Console.WriteLine("");
@@ -172,7 +173,7 @@ namespace joc_de_preguntes
 
         static void pregunta3H()
         {
-            //TERCERA PREGUNTA D'HISTORIA'
+            //TERCERA PREGUNTA D'HISTORIA
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Com es deien els dos exploradors que van donar la primera volta a el món?");
             Console.WriteLine("1- Magallanes-Elcano");
@@ -420,7 +421,7 @@ namespace joc_de_preguntes
 
         static void pregunta4AL()
         {
-            //TERCERA PREGUNTA D'ART
+            //QUARTA PREGUNTA D'ART
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Qui va escriure la colmena?");
             Console.WriteLine("1- Steve Jobs");
@@ -457,7 +458,7 @@ namespace joc_de_preguntes
 
         static void pregunta5AL()
         {
-            //TERCERA PREGUNTA D'ART
+            //CINQUENA PREGUNTA D'ART
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Com es diu el pintor noruec autor de l'obra El Grito");
             Console.WriteLine("1- Camilo José Cela");
@@ -496,6 +497,7 @@ namespace joc_de_preguntes
 
         static void esports()
         {
+            //CAP DE PREGUNTES D'ESPORTS
             Console.BackgroundColor = ConsoleColor.Cyan;
             Console.Clear();
             Console.WriteLine("");
@@ -551,7 +553,7 @@ namespace joc_de_preguntes
 
         static void pregunta2E()
         {
-            //SEGONA PREGUNTA D'Esports
+            //SEGONA PREGUNTA D'ESPORTS
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Què esport jugat amb un bat i una pilota és el més popular a l'Índia?");
             Console.WriteLine("1- Baesball");
@@ -662,7 +664,7 @@ namespace joc_de_preguntes
 
         static void pregunta5E()
         {
-            //TERCERA PREGUNTA D'ESPORTS
+            //CINQUENA PREGUNTA D'ESPORTS
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("En qué ciudad italiana nació el piloto de motociclismo Valentino Rossi?");
             Console.WriteLine("1- Moskow");
@@ -709,11 +711,13 @@ namespace joc_de_preguntes
 
         static void correcte()
         {
+            //MÈTODE PER A LES SOLUCIONS CORRECTES
             Console.WriteLine("Resposta correcta!!!");
         }
 
         static void incorrecte()
         {
+            //MÈTODE PER A LES SOLUCIONS INCORRECTES
             Console.WriteLine("Resposta incorrecta!!!");
         }
     }

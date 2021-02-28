@@ -287,7 +287,7 @@ namespace joc_de_preguntes
 
 
         static void artLiteratura()
-            //CAP DE PREGUNTES SOBRE D'ART
+            //CAP DE PREGUNTES SOBRE D'ART i literatura
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.Clear();

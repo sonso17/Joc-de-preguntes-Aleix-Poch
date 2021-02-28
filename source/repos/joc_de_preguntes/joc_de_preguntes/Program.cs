@@ -287,6 +287,7 @@ namespace joc_de_preguntes
 
 
         static void artLiteratura()
+            //CAP DE PREGUNTES SOBRE D'ART
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.Clear();
@@ -308,7 +309,7 @@ namespace joc_de_preguntes
 
         static void pregunta1AL()
         {
-            //PRIMERA PREGUNTA D'HISTORIA
+            //PRIMERA PREGUNTA D'ART
             Console.WriteLine("Quina novel·la va escriure Miguel de Cervantes i és considerada com una dels màxims exponents de la literatura espanyola i universal?");
             Console.WriteLine("1- El ingenioso hidalgo Don Quijote de la Mancha");
             Console.WriteLine("2- Mortadelo y Filemón");
@@ -345,7 +346,7 @@ namespace joc_de_preguntes
 
         static void pregunta2AL()
         {
-            //SEGONA PREGUNTA D'HISTORIA
+            //SEGONA PREGUNTA D'ART
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Quin gran artista és conegut per haver pintat la Capella Sixtina?");
             Console.WriteLine("1- Homer Simpson");
@@ -382,7 +383,7 @@ namespace joc_de_preguntes
 
         static void pregunta3AL()
         {
-            //TERCERA PREGUNTA D'HISTORIA'
+            //TERCERA PREGUNTA D'ART
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Qui va escriure la colmena?");
             Console.WriteLine("1- Steve Jobs");
@@ -419,7 +420,7 @@ namespace joc_de_preguntes
 
         static void pregunta4AL()
         {
-            //TERCERA PREGUNTA D'HISTORIA'
+            //TERCERA PREGUNTA D'ART
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Qui va escriure la colmena?");
             Console.WriteLine("1- Steve Jobs");
@@ -456,7 +457,7 @@ namespace joc_de_preguntes
 
         static void pregunta5AL()
         {
-            //TERCERA PREGUNTA D'HISTORIA'
+            //TERCERA PREGUNTA D'ART
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Com es diu el pintor noruec autor de l'obra El Grito");
             Console.WriteLine("1- Camilo José Cela");

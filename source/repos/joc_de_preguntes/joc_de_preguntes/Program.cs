@@ -551,7 +551,7 @@ namespace joc_de_preguntes
 
         static void pregunta2E()
         {
-            //SEGONA PREGUNTA D'ART
+            //SEGONA PREGUNTA D'Esports
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Què esport jugat amb un bat i una pilota és el més popular a l'Índia?");
             Console.WriteLine("1- Baesball");
@@ -588,7 +588,7 @@ namespace joc_de_preguntes
 
         static void pregunta3E()
         {
-            //TERCERA PREGUNTA D'ART
+            //TERCERA PREGUNTA D'ESPORTS
             Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Quin jugador de futbol va donar peu a un moviment conegut com la gravesinha?");
             Console.WriteLine("1- Thomas the train");
@@ -616,6 +616,43 @@ namespace joc_de_preguntes
                         break;
 
                     default:
+                        pregunta4E();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta4E()
+        {
+            //QUARTA PREGUNTA D'ESPORTS
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Què nedador d'elit nord-americà va guanyar quatre medalles d'or i dues de plata en els Jocs Olímpics de Londres de 2012?");
+            Console.WriteLine("1- Novita Novi");
+            Console.WriteLine("2- Michael Phelps");
+            Console.WriteLine("3- Thomas Gravesen");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        correcte();
+                        break;
+                    case '3':
+                        incorrecte();
+                        break;
+
+                    default:
                         pregunta4AL();
                         break;
                 }
@@ -623,8 +660,42 @@ namespace joc_de_preguntes
             } while (c != 'q' && c != 'Q');
         }
 
+        static void pregunta5E()
+        {
+            //TERCERA PREGUNTA D'ESPORTS
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("En qué ciudad italiana nació el piloto de motociclismo Valentino Rossi?");
+            Console.WriteLine("1- Moskow");
+            Console.WriteLine("2- Roma");
+            Console.WriteLine("3- Urbino");
 
 
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        correcte();
+                        break;
+
+                    default:
+                        MostrarMenu();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
 
 
         static void TempsEspera(int Segons)

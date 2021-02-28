@@ -299,6 +299,8 @@ namespace joc_de_preguntes
             pregunta1AL();
             pregunta2AL();
             pregunta3AL();
+            pregunta4AL();
+            pregunta5AL();
             
 
             TempsEspera(5000);
@@ -408,15 +410,86 @@ namespace joc_de_preguntes
                         break;
 
                     default:
-                        
+                        pregunta4AL();
                         break;
                 }
 
             } while (c != 'q' && c != 'Q');
         }
 
-       
+        static void pregunta4AL()
+        {
+            //TERCERA PREGUNTA D'HISTORIA'
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Qui va escriure la colmena?");
+            Console.WriteLine("1- Steve Jobs");
+            Console.WriteLine("2- Roberto Rodríguez");
+            Console.WriteLine("3- Camilo José Cela");
 
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        correcte();
+                        break;
+
+                    default:
+                        pregunta5AL();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta5AL()
+        {
+            //TERCERA PREGUNTA D'HISTORIA'
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Com es diu el pintor noruec autor de l'obra El Grito");
+            Console.WriteLine("1- Camilo José Cela");
+            Console.WriteLine("2- Edvard Munch");
+            Console.WriteLine("3- Miguel de Cervantes");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        correcte();
+                        break;
+                    case '3':
+                        incorrecte();
+                        break;
+
+                    default:
+                        MostrarMenu();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
 
 
 

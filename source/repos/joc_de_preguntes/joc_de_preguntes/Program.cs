@@ -98,7 +98,7 @@ namespace joc_de_preguntes
             Console.WriteLine("1- Adolfo Suárez.");
             Console.WriteLine("2- Pedro Sánchez");
             Console.WriteLine("3- Carles Puigdemont");
-            Console.WriteLine("presiona qualsevol tecla per a passar a la seguent pregunta: ");
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
 
 
             char c;
@@ -130,7 +130,7 @@ namespace joc_de_preguntes
 
         static void pregunta2H()
         {
-            Console.WriteLine("presiona qualsevol tecla per a passar a la seguent pregunta: ");
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Qui va ser el primer president dels Estats Units?");
             Console.WriteLine("1- Donald Trump");
             Console.WriteLine("2- George Washington");
@@ -166,7 +166,7 @@ namespace joc_de_preguntes
 
         static void pregunta3H()
         {
-            Console.WriteLine("presiona qualsevol tecla per a passar a la seguent pregunta: ");
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
             Console.WriteLine("Com es deien els dos exploradors que van donar la primera volta a el món?");
             Console.WriteLine("1- Magallanes-Elcano");
             Console.WriteLine("2- Roberto-Rodríguez");
@@ -193,13 +193,84 @@ namespace joc_de_preguntes
                         break;
 
                     default:
-                        pregunta3H();
+                        pregunta4H();
                         break;
                 }
 
             } while (c != 'q' && c != 'Q');
         }
 
+        static void pregunta4H()
+        {
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Què illa va servir de presó per Napoleó després de la seva derrota a la batalla de Waterloo?");
+            Console.WriteLine("1- Illes de Hawaii");
+            Console.WriteLine("2- Illes Canàries");
+            Console.WriteLine("3- Illa de Santa Elena");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        correcte();
+                        break;
+
+                    default:
+                        pregunta5H();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta5H()
+        {
+            Console.WriteLine("presiona qualsevol tecla per a tornar al MENU PRINCIPAL ");
+            Console.WriteLine("Per quina religió és especialment important el rei Haile Selassie I?");
+            Console.WriteLine("1- cristianisme");
+            Console.WriteLine("2- rastafari");
+            Console.WriteLine("3- budisme");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        correcte();
+                        break;
+                    case '3':
+                        incorrecte();
+                        break;
+
+                    default:
+                        MostrarMenu();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
 
 
 

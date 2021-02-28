@@ -296,8 +296,129 @@ namespace joc_de_preguntes
             Console.WriteLine("\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::");
             Console.WriteLine("");
 
+            pregunta1AL();
+            pregunta2AL();
+            pregunta3AL();
+            
+
             TempsEspera(5000);
         }
+
+        static void pregunta1AL()
+        {
+            //PRIMERA PREGUNTA D'HISTORIA
+            Console.WriteLine("Quina novel·la va escriure Miguel de Cervantes i és considerada com una dels màxims exponents de la literatura espanyola i universal?");
+            Console.WriteLine("1- El ingenioso hidalgo Don Quijote de la Mancha");
+            Console.WriteLine("2- Mortadelo y Filemón");
+            Console.WriteLine("3- El Hobbit");
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        correcte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        incorrecte();
+                        break;
+
+                    default:
+                        pregunta2AL();
+                        break;
+
+                }
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta2AL()
+        {
+            //SEGONA PREGUNTA D'HISTORIA
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Quin gran artista és conegut per haver pintat la Capella Sixtina?");
+            Console.WriteLine("1- Homer Simpson");
+            Console.WriteLine("2- Joan Dausà");
+            Console.WriteLine("3- Miguel Angel");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        correcte();
+                        break;
+
+                    default:
+                        pregunta3AL();
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+        static void pregunta3AL()
+        {
+            //TERCERA PREGUNTA D'HISTORIA'
+            Console.WriteLine("presiona qualsevol tecla per a passar a la SEGUENT PREGUNTA: ");
+            Console.WriteLine("Qui va escriure la colmena?");
+            Console.WriteLine("1- Steve Jobs");
+            Console.WriteLine("2- Roberto-Rodríguez");
+            Console.WriteLine("3- Camilo José Cela");
+
+
+            char c;
+
+            do
+            {
+                c = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (c)
+                {
+                    case '1':
+                        incorrecte();
+                        break;
+                    case '2':
+                        incorrecte();
+                        break;
+                    case '3':
+                        correcte();
+                        break;
+
+                    default:
+                        
+                        break;
+                }
+
+            } while (c != 'q' && c != 'Q');
+        }
+
+       
+
+
+
 
         static void esports()
         {
